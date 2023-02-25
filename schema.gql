@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  createUser(email: String!, firstName: String!, lastName: String!, login: String!, password: String!): UserEntity!
+  updateUser(active: Boolean, email: String, firstName: String, id: Float, lastName: String, login: String, password: String): UserEntity!
+}
+
+type Query {
+  getOneById(id: Float!): UserEntity!
+  getUsersList(limit: Float!, offset: Float!): [UserEntity!]!
+}
+
+type UserEntity {
+  active: Boolean!
+  email: String!
+  firstName: String!
+  id: Float!
+  lastName: String!
+  login: String!
+  password: String!
+}
